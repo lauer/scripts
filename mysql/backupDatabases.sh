@@ -47,7 +47,9 @@ logfile=$backupdir/backup.$datetime.log
 rm -f $backupdir/inprogress/*
 rm -f $backupdir/backup.*.log
 
-
+echo -n "Backup started: " > $logfile
+date >> $logfile
+echo "" >> $logfile
 
 # clean old backups (more than 7 days old)
 oldbackuplist=`find $backupdir/* -type d -mtime +7`
