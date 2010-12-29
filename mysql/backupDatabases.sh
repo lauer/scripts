@@ -50,7 +50,7 @@ rm -f $backupdir/backup.*.log
 
 
 # clean old backups (more than 7 days old)
-oldbackuplist=`find $backupdir/* -type d -mtime +7d`
+oldbackuplist=`find $backupdir/* -type d -mtime +7`
 for olddir in $oldbackuplist
 do
 	echo ""
