@@ -1,6 +1,10 @@
 #!/bin/sh
 #
-# Script for crontab
+# Script for backup MySQL databases in crontab
+# Tested on ubuntu +10.04 LTS
+# 
+# Created by Jesper Grann Laursen, powerlauer AT gmail DOT com
+# https://github.com/lauer/scripts/blob/master/mysql/backupDatabases.sh
 #
 # configfile
 config=/etc/backupDatabases.conf
